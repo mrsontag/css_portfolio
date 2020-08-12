@@ -5,34 +5,29 @@
     font-family: sans-serif;
 }
 
+#container {
+    background-color:#f9f9f9;
+    width:1024px;
+}
+
 #maincontent {
     width:1024px;
     margin:0px auto;
     background-image: radial-gradient(#7f6673,#211115 );
 }
 
-.grey_crosspage {
-    background-color:#f9f9f9;
-    width:1024px;
-}
-
-#headerleft {
+#container > h1 {
     width:45%;
     margin:10px 25px;
-    display:inline-block;   
-}
-
-#headerleft > h1 {
+    display:inline-block;
     font-family: "Comic Sans MS", cursive, sans-serif;
 }
 
-#headerright {
+#container > h2 {
     width:45%;
-    margin:0px;
     text-align: right;
     display:inline-block;
 }
-
 
 .sec_head {
     background-image: linear-gradient(#b3b3b7,#898593,#b3b3b7);
@@ -40,35 +35,23 @@
     padding: 10px;
 }
 
-.section {
-    background-image: linear-gradient(to right,  #ffffff, #dbcbd9);
-}
-
-#row1 > img {
-    width: 470px;
+#maincontent > img {
+    width: 480px;
     margin: 10px;
     border-width: 5px;
     border-style: solid;
     border-color: #c0c0c0;
     display: inline-block;
-
+    vertical-align: top;
 }
 
 #about{
     display:inline-block;
     margin: 10px;
-    width:470px;
+    width:480px;
+    height: 328px;
     vertical-align: top;
-}
-#abouth {
-    display: inline-block;
-    width:100%;
-}
-#abouttext {
-    display:inline-block;
-
-    width:490px;
-    height:275px;
+    background-image: linear-gradient(to right,  #ffffff, #dbcbd9);h
 }
 
 #abouttext a {
@@ -80,22 +63,24 @@
     margin: 15px;
     height: 600px;
     display: inline-block;
+    vertical-align: top;
+    background-image: linear-gradient(to right,  #ffffff, #dbcbd9);
+}
+
+.projectcol p {
+    height:180px;
 }
 
 .projectbody {
     height:350px;
 }
 
-.projectbody > img {
+
+.projectcol > img:first-of-type {
     width:100%;
 }
 
-
-.techimages {
-    height:160px;
-}
-
-.techimages > img {
+.small_logo {
     width:40px;
     margin: 5px;
     
@@ -124,25 +109,27 @@
 }
 
 #footer {
-    text-align: center;
-    padding: 5px 0px;
+
     
 }
 
-#footer a {
+#container > p a {
     color: black;
     text-decoration: none;
 }
 
-#footer p {
+#container > p {
+    text-align: center;
+    padding: 5px 0px;
     margin: 10px 0px;
 }
-#footer img {
+
+#container > p img {
     height: 20px;
     margin: 2px;
     vertical-align: middle;
 }
-#footer a.underlinedlinks {
+#container a.underlinedlinks {
     text-decoration:underline;
     font-style: italic;
 }
